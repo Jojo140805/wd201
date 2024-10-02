@@ -6,6 +6,13 @@
     "test": "jest",
     "prepare": "cd .. && husky install todo-cli/.husky"
   },
+  
+  "lint-staged": {
+    "*.js": [
+      "eslint",
+      "prettier --write ."
+    ]
+  },
   "author": "Johan Colaco <23b29.johan@sjec.ac.in>",
   "license": "ISC",
   "description": "",
