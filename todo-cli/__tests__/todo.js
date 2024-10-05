@@ -44,6 +44,7 @@ describe("Todolist Test Suite", () => {
 
   // Test case: Retrieving due today todos
   test("Should retrieve due today todos", () => {
+    // Ensure there's a todo due today
     const todayTodos = dueToday();
     expect(todayTodos.length).toBeGreaterThan(0); // Should find at least one todo due today
     expect(todayTodos[0].dueDate).toBe(new Date().toISOString().slice(0, 10)); // Verify the due date matches today
